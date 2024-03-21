@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZT99GZRRJR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZT99GZRRJR');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Occupation Charts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>“Assessing Job Vulnerability and Employment Growth in the Era of Large Language Models”</h1>
+</header>
+
+<nav>
+  <a href="https://www.bls.gov/emp/" target="_blank">Job Growth</a>
+  <a href="https://research.com/careers/job-automation-risks" target="_blank">Job Vulnerability</a>
+  <a href="https://openai.com/blog" target="_blank">Blog</a>
+</nav>
+
+<main>
+<section id="content">
+  
+  <h4>Project Overview</h4>
+  <p>In response to the rising concerns surrounding the impact of Large Language Models (LLMs) and artificial intelligence on employment, this capstone project, titled "Assessing Job Vulnerability and Employment Growth in the Era of Large Language Models," aims to conduct a comprehensive analysis, particularly focusing on white-collar occupations. The rapid evolution of technology, coupled with the potential for automation, necessitates an in-depth exploration of job vulnerability to empower affected workers and inform key stakeholders.</p>
+  <p>The scope of the project is focused specifically on white-collar jobs and their susceptibility to automation. White-collar jobs typically involve professional, managerial, administrative, or clerical tasks, often requiring higher levels of education, cognitive skills, and specialized knowledge. Examples of white-collar occupations include accountants, lawyers, software developers, managers, and administrative assistants.</p>
+  <P>While acknowledging that automation also impacts blue-collar jobs (typically involving manual labor and skilled trades), the project's primary focus remains on white-collar occupations. However, users will have the opportunity to explore blue-collar jobs that are also susceptible to automation. This option allows users to gain insights into both white-collar and blue-collar job automation risks, while keeping the core analysis and findings centered on white-collar occupations.</P>
+
+  <h2>What White-collar jobs are more likely to be replaced by LLMs?</h2> 
+
+<div id="table-container">
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Occupation</th>
+          <th>Probability</th>
+          <th>Risk of Automation</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+</div> 
+
+  <!-- Occupation Filter Dropdown -->
+  <label for="occupation-filter">Select Occupation:</label>
+  <select id="occupation-select"></select>
+  
+  <div class="checkbox-container">
+  <label><input type="checkbox" id="white-collar" checked> White Collar</label>
+  <label><input type="checkbox" id="blue-collar" checked> Blue Collar</label>
+</div>
+  
+  <!-- Container for SVG charts -->
+  <div id="chart-container"></div>
+</section>
+
+
+
+<!-- Include D3.js -->
+<script src="../lib/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<h5><span class="data-source-text">Data Source: </span><a href="https://www.kaggle.com/datasets/andrewmvd/occupation-salary-and-likelihood-of-automation" target="_blank">"job-automation-risks"</a></h5>
+
+<h2>Charting the Future: Key Takeaways on AI's Impact on Employment</h2>
+<p>This capstone project is significant in bridging the gap between academic research and practical implications. By focusing on real-world data and employing advanced visualization techniques, it seeks to contribute valuable insights into the intricate relationship between large language models, job vulnerability, and employment growth. Its findings will serve as a valuable resource for individuals, businesses, and policymakers navigating the evolving landscape of work in the age of AI.</p>
+
+</main>
+
+<div id="footer">&copy;Prudence Brou Graduate Center 2024 &ndash; All Rights Reserved.</div>
+
+</body>
+
+</html>
